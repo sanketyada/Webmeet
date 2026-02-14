@@ -6,5 +6,5 @@ const meetingSchema = new Schema({
   date: { type: Date, default: Date.now(), required: true },
 });
 
-const Meeting = model("Meeting",meetingSchema)
-export {Meeting}
+const Meeting = model("Meeting", meetingSchema);
+export { Meeting };

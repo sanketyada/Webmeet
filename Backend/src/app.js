@@ -11,7 +11,7 @@ import {connectTOServer} from "./controllers/socketManager.js"
 const server = createServer(app);
 const io =  connectTOServer(server);
 
-//sstting Enviroment variable for entire projet
+//setting Enviroment variable for entire projet
 app.set("port", process.nextTick.PORT || 8000);
 
 //Importent stuff
@@ -20,7 +20,7 @@ app.use(exprees.json({limit:"40kb"}))
 app.use(exprees.urlencoded({limit:"40kb",extended:true}))
 
 import userRoutes from "./routes/user.routes.js"
-app.use("/",userRoutes)
+app.use("/api/v1/users",userRoutes)
 
 
 const start = async () => {
