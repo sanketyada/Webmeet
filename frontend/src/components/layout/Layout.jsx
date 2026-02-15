@@ -6,11 +6,11 @@ import Footer from "./Footer";
 function Layout() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <Outlet/>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
