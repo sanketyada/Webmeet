@@ -7,9 +7,9 @@ import mongoose from "mongoose";
 const app = exprees();
 
 //Socket io related Services
-import {connectTOServer} from "./controllers/socketManager.js"
+import {connectToSocket} from "./controllers/socketManager.js"
 const server = createServer(app);
-const io =  connectTOServer(server);
+const io =  connectToSocket(server);
 
 //setting Enviroment variable for entire projet
 app.set("port", process.nextTick.PORT || 8000);
