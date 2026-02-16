@@ -28,7 +28,7 @@ const start = async () => {
   console.log((await ConnectDB).connection.host)
   //   ConnectDB.then((connection)=>{console.log(`Db Host:${connection}`)})
   server.listen(app.get("port"), (req, res) => {
-    console.log("App is Listening");
+    console.log("http://localhost:8000");
   });
 
 };
