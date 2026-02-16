@@ -1,6 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import { useContext } from "react";
+import AuthProvider from '../context/AuthContext'
+
 function LandingPage() {
+  
+
+
   return (
     <div className="landingPageContainer">
       <nav>
